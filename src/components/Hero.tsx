@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { siteData } from "../data";
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
-import { HeroModel } from "./HeroModel";
+import { HeroUniverse } from "./HeroUniverse";
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -41,7 +41,7 @@ export function Hero() {
 
   return (
     <section id="home" ref={containerRef} className="relative min-h-screen pt-32 pb-20 px-6 md:px-10 flex flex-col justify-center overflow-hidden">
-      <HeroModel />
+      <HeroUniverse />
       
       <div className="max-w-[1400px] mx-auto w-full relative z-10">
         <div className="mb-6 font-mono text-xs tracking-widest uppercase flex items-center gap-3 text-[#a3a3a3]">
